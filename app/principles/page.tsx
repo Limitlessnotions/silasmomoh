@@ -1,0 +1,11 @@
+import SiteHeader from '@/components/SiteHeader';
+import PageIntro from '@/components/PageIntro';
+const principles=[
+ {n:'01',t:'Understand the process before choosing tools',d:'Start with the business objective, actors, inputs, decisions and failure points. Automation should improve a process, not simply digitize unnecessary steps.'},
+ {n:'02',t:'Design for failure, not just the happy path',d:'Plan for timeouts, malformed data, duplicate events, unavailable services and partial completion. Use validation, retries, idempotency and clear recovery paths where appropriate.'},
+ {n:'03',t:'Make systems observable',d:'Execution history, structured logs, useful error messages and meaningful status signals make it possible to diagnose problems and maintain confidence in an automation.'},
+ {n:'04',t:'Protect data and credentials',d:'Use least-privilege access, keep secrets out of client code, minimize the data a workflow needs and treat external inputs as untrusted.'},
+ {n:'05',t:'Keep AI behavior bounded and testable',d:'Give AI systems explicit responsibilities, structured inputs and outputs, tool boundaries and fallback paths. Evaluate outputs instead of assuming model responses are always correct.'},
+ {n:'06',t:'Measure outcomes and iterate',d:'Assess whether a solution improves the original workflow. Refine based on observed performance, user feedback and operational needs rather than adding complexity without evidence.'},
+];
+export default function PrinciplesPage(){return <main><SiteHeader/><div className="wrap inner-page"><PageIntro eyebrow="ENGINEERING STANDARDS / QUALITY & RELIABILITY" title="Principles I build by" description="A practical set of standards guiding how I design, integrate, test and improve automation and software systems."/><div className="principle-list">{principles.map(p=><article key={p.n}><span>{p.n}</span><div><h2>{p.t}</h2><p>{p.d}</p></div></article>)}</div><div className="principles-note"><span className="pulse"/> These are working engineering principles, not claims of formal certification or an externally audited SLA.</div></div><footer className="footer wrap"><a className="brand" href="/"><span className="brand-mark">S</span><span>silas<span className="muted">.dev</span></span></a><span>BUILD · INTEGRATE · IMPROVE</span><a href="/">BACK TO OVERVIEW ↑</a></footer></main>}
