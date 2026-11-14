@@ -131,7 +131,7 @@ export default function Home() {
               }}
             >
               <img
-                src="/silas.jpeg"
+                src="/Silas.jpeg"
                 alt="Portrait of Silas Momoh"
                 style={{
                   display: 'block',
@@ -819,46 +819,46 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CONTACT */}
-      <section className="contact-section" id="contact">
-        <div className="wrap contact-layout">
-          <div className="contact-copy">
-            <SectionHeading
-              eyebrow="CONTACT / 05"
-              title="Have a problem worth solving?"
-              description="Tell me what you're building, what needs to work better, or where automation could help. Let's discuss the next step."
-            />
+     {/* CONTACT */}
+<section className="contact-section" id="contact">
+  <div className="wrap contact-layout">
+    <div className="contact-copy">
+      <SectionHeading
+        eyebrow="CONTACT / 05"
+        title="Let's build something meaningful."
+        description="Whether you're developing a software product, automating business operations, or integrating intelligent systems, let's discuss what we can create together."
+      />
 
-            <div className="contact-email">
-              <span>DIRECT EMAIL</span>
+      <div className="contact-email">
+        <span>DIRECT EMAIL</span>
 
-              <a href={`mailto:${profile.email}`}>
-                {profile.email} ↗
-              </a>
-            </div>
+        <a href={`mailto:${profile.email}`}>
+          {profile.email} ↗
+        </a>
+      </div>
 
-            <div className="contact-links">
-              <a
-                href={profile.github}
-                target="_blank"
-                rel="noreferrer"
-              >
-                GitHub ↗
-              </a>
+      <div className="contact-links">
+        <a
+          href={profile.github}
+          target="_blank"
+          rel="noreferrer"
+        >
+          GitHub ↗
+        </a>
 
-              <a
-                href={profile.linkedin}
-                target="_blank"
-                rel="noreferrer"
-              >
-                LinkedIn ↗
-              </a>
-            </div>
-          </div>
+        <a
+          href={profile.linkedin}
+          target="_blank"
+          rel="noreferrer"
+        >
+          LinkedIn ↗
+        </a>
+      </div>
+    </div>
 
-          <ContactForm email={profile.email} />
-        </div>
-      </section>
+    <ContactForm email={profile.email} />
+  </div>
+</section>
 
       {/* FOOTER */}
       <footer className="footer wrap">

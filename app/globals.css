@@ -3933,3 +3933,126 @@ h1 span {
     flex-direction: column;
   }
 }
+
+
+/* Anti-bot verification */
+
+.captcha-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.025);
+  margin-top: 4px;
+}
+
+.captcha-icon {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  color: var(--accent);
+  font-size: 22px;
+}
+
+.captcha-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.captcha-heading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 5px;
+}
+
+.captcha-heading strong {
+  font-size: 12px;
+}
+
+.captcha-badge {
+  font-size: 9px;
+  padding: 3px 6px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--accent);
+}
+
+.captcha-content p {
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+.captcha-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.captcha-actions input {
+  width: 68px;
+  min-width: 0;
+  padding: 9px;
+  text-align: center;
+}
+
+.captcha-refresh {
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+  font-size: 19px;
+}
+
+.captcha-refresh:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.captcha-success {
+  display: inline-block;
+  margin-top: 5px;
+  font-size: 11px;
+  color: var(--accent);
+}
+
+.captcha-error {
+  margin: -5px 0 0;
+  color: #ff7777;
+  font-size: 11px;
+}
+
+.captcha-verify {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text);
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.captcha-verify:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.submit-button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
