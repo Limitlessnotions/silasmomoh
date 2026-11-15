@@ -237,7 +237,7 @@ export default function Home() {
 
         <div>
           <strong>
-            2<span>+</span>
+            4<span>+</span>
           </strong>
 
           <p>
@@ -302,15 +302,15 @@ export default function Home() {
               <div className="project-visual-grid" />
 
               <div className="project-glyph">
-                {project.number === '03'
+                {project.number === '01'
                   ? '↗'
-                  : project.number === '04'
+                  : project.number === '02'
                     ? '◎'
-                    : project.number === '05'
+                    : project.number === '03'
                       ? '▷'
-                      : project.number === '06'
+                      : project.number === '04'
                         ? '✦'
-                        : project.number === '07'
+                        : project.number === '05'
                           ? '⌁'
                           : '⇄'}
               </div>
