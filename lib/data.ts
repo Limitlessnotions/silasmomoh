@@ -34,7 +34,7 @@ export const projects = [
     href: 'https://scoutx-nine.vercel.app/',
   },
   {
-    number: '03',
+    number: '01',
     type: 'automation',
     category: 'FINTECH · AUTOMATION',
     name: 'Paylite',
@@ -45,7 +45,7 @@ export const projects = [
     href: null,
   },
   {
-    number: '04',
+    number: '02',
     type: 'automation',
     category: 'CONVERSATIONAL AI · REAL ESTATE',
     name: 'AgentAssistantPro',
@@ -56,7 +56,7 @@ export const projects = [
     href: null,
   },
   {
-    number: '05',
+    number: '03',
     type: 'automation',
     category: 'AI WORKFLOW · CONTENT',
     name: 'Automated Video Generation Pipeline',
@@ -67,7 +67,7 @@ export const projects = [
     href: null,
   },
   {
-    number: '06',
+    number: '04',
     type: 'automation',
     category: 'AI AUTOMATION · PERSONALIZATION',
     name: 'Joyous Legacy',
@@ -78,7 +78,7 @@ export const projects = [
     href: null,
   },
   {
-    number: '07',
+    number: '05',
     type: 'automation',
     category: 'AI AUTOMATION · REAL ESTATE',
     name: 'Real Estate AI Triage Assistant',
@@ -89,7 +89,7 @@ export const projects = [
     href: null,
   },
   {
-    number: '08',
+    number: '06',
     type: 'automation',
     category: 'INTEGRATION · DOCUMENT PROCESSING',
     name: 'Rossum → POHODA Integration',
