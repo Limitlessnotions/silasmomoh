@@ -2,8 +2,32 @@
 import type { Metadata } from 'next';
 import './globals.css';
 
+const siteUrl = 'https://silas-momoh.vercel.app';
+
+const personSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: 'Silas Momoh',
+  alternateName: 'Momoh Silas Enemona',
+  url: siteUrl,
+  jobTitle: [
+    'AI Automation Engineer',
+    'Software Developer',
+  ],
+  description:
+    'AI Automation Engineer and Software Developer specializing in intelligent automation, AI agents, software development, web applications, and API integrations.',
+  sameAs: [
+    'https://www.linkedin.com/in/silas-momoh/',
+    'https://github.com/Limitlessnotions',
+    'https://www.fiverr.com/silasenemona',
+    'https://contra.com/silas_momoh/about',
+    'https://www.instagram.com/silas_momoh/',
+    'https://web.facebook.com/sem.momoh',
+  ],
+};
+
 export const metadata: Metadata = {
-  metadataBase: new URL('https://silas-momoh.vercel.app'),
+  metadataBase: new URL(siteUrl),
 
   title: {
     default: 'Silas Momoh | AI Automation Engineer & Software Developer',
@@ -33,7 +57,7 @@ export const metadata: Metadata = {
     title: 'Silas Momoh | AI Automation Engineer & Software Developer',
     description:
       'Building intelligent automation systems, AI agents, web applications and software products.',
-    url: 'https://silas-momoh.vercel.app',
+    url: siteUrl,
     siteName: 'Silas Momoh',
     locale: 'en_US',
     type: 'website',
@@ -54,7 +78,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(personSchema).replace(/</g, '\\u003c'),
+          }}
+        />
+        {children}
+      </body>
     </html>
   );
 }
